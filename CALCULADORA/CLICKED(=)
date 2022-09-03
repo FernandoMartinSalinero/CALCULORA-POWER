@@ -1,0 +1,14 @@
+choose case ii_operacion
+		
+	case 1 // Multiplicacion
+		em_visor.text = string (idec_memoria * dec (em_visor.text))
+	case 2 // Suma
+		em_visor.text = string (idec_memoria + dec (em_visor.text))	
+	case 3 // División
+		em_visor.text = string (idec_memoria / dec (em_visor.text))
+	case 4 // Resta
+		em_visor.text = string (idec_memoria - dec (em_visor.text))
+	case 5 // porcentaje
+		em_visor.text = string  (idec_memoria * dec (em_visor.text) /100)
+
+end choose
