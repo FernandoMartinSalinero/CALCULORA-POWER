@@ -1,0 +1,43 @@
+string ls_texto
+
+ls_texto = em_visor.text
+if ls_texto = '0' then
+	if ac_caracter = ',' then
+		em_visor.text = '0,'
+	else 
+		em_visor.text = ac_caracter
+	end if
+else 
+	if ib_multiplicacion or ib_suma or ib_division or ib_resta or ib_porcentaje then
+	
+		idec_memoria = dec (em_visor.text)
+		em_visor.text = ac_caracter
+		
+		if ib_multiplicacion then 
+			ib_multiplicacion = false
+			ii_operacion = 1
+		elseif ib_suma then 
+			ib_suma = false
+			ii_operacion = 2
+		elseif ib_division then 
+			ib_division = false
+			ii_operacion = 3
+		elseif ib_resta then 
+			ib_resta = false
+			ii_operacion = 4
+		elseif ib_porcentaje then
+			ib_porcentaje = false
+			ii_operacion = 5
+		end if
+	else
+		if ac_caracter = '-' then
+			em_visor.text = string (dec (em_visor.text)*(-1))
+		else
+			em_visor.text = em_visor.text + ac_caracter		
+		end if
+	end if
+end if
+
+return 1
+	
+	
