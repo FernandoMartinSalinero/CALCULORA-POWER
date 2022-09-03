@@ -1,0 +1,7 @@
+boolean ib_multiplicacion = false
+decimal idec_memoria = 0
+integer ii_operacion = 0
+boolean ib_suma = false
+boolean ib_division = false
+boolean ib_resta = false
+boolean ib_porcentaje = false
