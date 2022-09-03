@@ -1,0 +1,10 @@
+em_visor.text = '0'
+ib_multiplicacion = false
+idec_memoria = 0
+ii_operacion = 0
+ib_suma = false
+ib_division = false
+ib_resta = false
+ib_porcentaje = false
+
+return 1
